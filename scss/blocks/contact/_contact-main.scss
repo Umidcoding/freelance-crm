@@ -1,0 +1,115 @@
+#contact {
+  padding-top: 213px;
+  padding-bottom: 102px;
+}
+.contact__wrapper {
+  margin-top: 50px;
+}
+
+.contact__forms {
+  max-width: 453px;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  padding: 52px 50px;
+  box-shadow: 0 2px 5px 0 #d8d8d8;
+}
+
+.contact__forms-title {
+  @include text(20px,700,28px,0.1px);
+  color: $bg-color;
+  margin-bottom: 45px;
+}
+
+.contact__forms-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__forms-inp {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #d8d8d8;
+  border-radius: 39px;
+  background-color: #e8e8e8;
+  color: #18171D;
+  margin-bottom: 45px;
+  &:focus {
+    outline: 2px solid #ccc;
+  }
+}
+
+.contact__forms-area {
+  border-radius: 1px;
+  height: 193px;
+  padding: 20px;
+}
+
+.contact__forms-btn {
+  @include btn;
+  padding: 18px 48px;
+}
+
+.contact__location-list {
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.contact__location-item::before {
+  content: "";
+  width: 26px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+  background: url("../../../media/img/map.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.contact__location-item:nth-child(2)::before {
+  content: "";
+  width: 21px;
+  height: 34px;
+  background: url("../../../media/img/phone.svg");
+}
+
+.contact__location-item:nth-child(3)::before {
+  content: "";
+  width: 27px;
+  height: 22px;
+  background: url("../../../media/img/mail.svg");
+}
+
+.contact__location-link {
+  display: inline-block;
+  max-width: 293px;
+  @include text(14px,400,23px,0.1px);
+  @include text-dec-none;
+  color: $text-color;
+}
+
+.fr {
+  width: 100%;
+  max-width: 516px
+}
+
+.info__list {
+  @include list-unstyled;
+  @include social-list;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.info__item {
+  @include social-item();
+}
+
+.info__link {
+  font-size: 40px;
+  color: $btn-color;
+}

@@ -1,0 +1,157 @@
+@include breakpoint-down($max-lg) {
+
+}
+
+@include breakpoint-down($max-md) {
+  .features__main-form {
+    flex-direction: column;
+  }
+  .features__main-inp {
+    max-width: 100% !important;
+    margin-bottom: 12px;
+  }
+}
+
+@include breakpoint-down($max-sm) {
+  .hero .header {
+    padding: 20px 0;
+  }
+  .header .header__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__wrapper .header__burger {
+    display: block;
+  }
+  .header__social .header__social-list {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+
+  .hero__des {
+    max-width: 333px;
+  }
+  .hero__des .hero__title {
+    @include text(48px);
+  }
+  
+  .features__info-list {
+    flex-direction: column;
+  }
+
+  .features__info-list .features__info-item {
+    margin: 0 auto;
+    margin-bottom: 75px;
+  }
+  .features__main-wrapper {
+    margin-bottom: 110px !important;
+  }
+  .features__main-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 59px;
+  }
+  .features__main-texts {
+    padding-left: 0 !important;
+  }
+  .features__main-btn {
+    margin-left: 0 !important;
+  }
+  .partners__list {
+    flex-direction: column;
+  }
+  .partners__item {
+    margin-bottom: 12px;
+  }
+  .testimonlias .testimonlias__text {
+    @include text(14px, 700, 17px, 0.1px);
+  }
+  .cards__card .cards__inner {
+    margin-bottom: 20px;
+  } 
+
+  .contact__wrapper {
+    flex-direction: column-reverse;
+  }
+  .contact__text {
+    max-width: 365px !important;
+  }
+  .contact__location-frame {
+    display: none;
+  }
+
+  .contact__location {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact__location-list {
+    flex-direction: column;
+  }
+
+  .contact__location-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .contact__location-item::before {
+    margin: 0 !important;
+    margin-right: 10px !important;
+  }
+
+  .info__list {
+    justify-content: center;
+    margin-bottom: 50px !important;
+  }
+
+  .contact__forms {
+    margin: 0 auto;
+  }
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__list {
+      margin-bottom: 73px !important;
+    }
+
+    &__item {
+      text-align: center;
+    }
+    &__addres {
+      text-align: center;
+    }
+
+    &__social-list {
+      justify-content: center;
+    }
+
+  }
+
+}
+@include breakpoint-down($max-xs) {
+  .features__main-laptop {
+    max-width: 372px;
+    height: 225px;
+  }
+  .features__main-mess {
+    max-width: 331px;
+    height: 307px;
+    object-fit: cover;  
+  }
+  .pricing .pricing__text {
+    font-size: 24px;
+    max-width: 265px;
+  }
+  .contact__forms {
+    max-width: 378px !important;
+  }
+}

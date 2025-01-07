@@ -1,0 +1,16 @@
+.partners__header {
+  margin-bottom: 90px;
+}
+
+.partners__title {
+  @include text(48px,400,55px);
+  margin-bottom: 17px;
+  color: $bg-color;
+}
+
+.partners__text {
+  @include text();
+  max-width: 532px;
+  margin: 0 auto;
+  color: $text-color;
+}

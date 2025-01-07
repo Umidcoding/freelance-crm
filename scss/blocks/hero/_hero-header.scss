@@ -1,0 +1,69 @@
+.header {
+  padding: 50px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center
+  }
+
+  &__social-list {
+    @include list-unstyled();
+    @include social-list();
+  }
+
+  &__social-item:not(:last-child) {
+    @include social-item;
+  }
+
+  &__social-link {
+    font-size: 40px;
+    color: #fff;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $btn-color;
+    }
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__burger-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+  }
+}
+
+.nav {
+  &__list {
+    @include list-unstyled();
+    @include social-list();
+  }
+
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    @include text-dec-none;
+    transition:color 0.2s ease;
+
+    &:hover {
+      color: $btn-color;
+    }
+  }
+}

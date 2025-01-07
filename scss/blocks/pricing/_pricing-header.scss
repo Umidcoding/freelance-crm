@@ -1,0 +1,16 @@
+.pricing__header {
+  margin-bottom: 80px;
+}
+
+.pricing__title {
+  @include text(48px,400,55px,);
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+.pricing__text {
+  @include text();
+  max-width: 532px;
+  margin: 0 auto;
+  color: #fff;
+}

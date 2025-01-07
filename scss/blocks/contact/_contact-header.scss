@@ -1,0 +1,11 @@
+.contact__title {
+  @include text(48px,400,55px);
+  color: $bg-color;
+  margin-bottom: 17px;
+}
+
+.contact__text {
+  @include text();
+  max-width: 532px;
+  margin: 0 auto;
+}

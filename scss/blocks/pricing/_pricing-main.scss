@@ -1,0 +1,63 @@
+#pricing {
+  background-color: $bg-color;
+  padding: 100px 0;
+}
+
+.cards__inner {
+  max-width: 335px;
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+  color: $bg-color;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $btn-color;
+    color: #fff;
+  }
+  &:hover .cards__btn {
+    background-color: #fff;
+    color: $btn-color;
+  }
+}
+
+
+.cards__title {
+  @include text(20px,700,28px,0.1px);
+  margin-bottom: 17px;
+}
+
+.cards__text {
+  max-width: 148px;
+  @include text(16px,400,23px,0.1px);
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.cards__spn {
+  @include text(40px,700,84px);
+}
+
+.cards__month {
+  @include text(16px,400,23px,0.1px);
+}
+
+.cards__list {
+  @include list-unstyled();
+}
+
+.cards__item {
+  margin-bottom: 20px;
+}
+
+.cards__ft {
+  @include text(15px,400,28px);
+}
+
+.cards__btn {
+  @include btn();
+  padding: 18px 75px;
+  transition: all 0.2s ease;
+}

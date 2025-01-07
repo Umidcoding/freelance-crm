@@ -1,0 +1,16 @@
+.features__header-des {
+  margin-bottom: 150px;
+}
+
+.features__header-title {
+  @include text(48px,400,55px);
+  color: $text-color;
+  margin-bottom: 17px;
+}
+
+.features__header-text {
+  @include text();
+  max-width: 532px;
+  margin: 0 auto;
+  color: $text-color;
+}

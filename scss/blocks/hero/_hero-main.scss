@@ -1,0 +1,56 @@
+.hero {
+  background: url("../../../media/img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    padding-top: 50px;
+    padding-bottom: 230px;
+  }
+
+  &__des {
+    max-width: 826px;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  &__title {
+    @include text(74px,700, 84px,);
+    margin-bottom: 56px;
+    animation-name: title;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
+  @keyframes title {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  &__text {
+    @include text();
+    margin-bottom: 80px;
+    animation-name: text;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
+  @keyframes text {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  &__btn {
+    @include btn();
+    padding: 16px 60px;
+  }
+}

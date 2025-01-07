@@ -1,0 +1,51 @@
+.features__info-content {
+  margin-bottom: 132px;
+}
+
+.features__info-list {
+  @include list-unstyled;
+  @include social-list;
+  justify-content: center;
+}
+
+.features__info-item {
+  max-width: 255px;
+  margin: 0 50px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -30%;
+    left: 40%;
+    background: url("../../../media/img/mdi_drawing.svg");
+    background-repeat: no-repeat;;
+    background-position: center center;
+    background-size: cover;
+  }
+  &:nth-child(2)::before {
+    background: url("../../../media/img/mdi_draw.svg");
+  }
+
+  &:nth-child(3)::before {
+    background: url("../../../media/img/mdi_brush.svg");
+  }
+
+  &:nth-child(2) {
+    transform: translateY(-10px)
+  }
+}
+
+
+
+.features__info-title {
+  @include text(20px,700px,28px,0.1px);
+  color: $bg-color;
+  margin-bottom: 20px;
+}
+
+.features__info-text {
+  @include text(18px,400,25px);
+}

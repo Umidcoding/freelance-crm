@@ -1,0 +1,40 @@
+#testimonlias {
+  padding-bottom: 100px;
+}
+.testimonlias__title {
+  @include text(48px, 400, 55px);
+  color: $bg-color;
+  margin-bottom: 90px;
+}
+
+.testimonlias__link {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.testimonlias__text {
+  max-width: 967px;
+  @include text();
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.testimonlias__subtext {
+  @include text(16px, 400, 23px 0.1px);
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../../../media/img/avatar.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 13px;
+  }
+}
+.testimonlias__btn {
+  @include btn;
+  padding: 16px 59px;
+}
